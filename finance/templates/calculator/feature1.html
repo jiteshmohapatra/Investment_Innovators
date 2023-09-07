@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <title>Money Mentorship</title>
+</head>
+<body>
+    <header>
+        <h1>Money Mentorship</h1>
+    </header>
+    <main>
+        <section class="calculator">
+            <h2>Finance Calculator</h2>
+            <div class="input-group">
+                <label for="income">Monthly Income:</label>
+                <input type="number" id="income">
+            </div>
+            <div class="input-group">
+                <label for="expenses">Monthly Expenses:</label>
+                <input type="number" id="expenses">
+            </div>
+            <div class="input-group">
+                <label for="savings">Monthly Savings Goal:</label>
+                <input type="number" id="savings">
+            </div>
+            <button onclick="calculateAdvice()">Get Advice</button>
+            <div id="advice"></div>
+        </section>
+        
+    </main>
+    <script src="{% static 'js/script1.js' %}"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="{% static 'css/finance1.png' %}" alt="Money Mentorship Logo">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2023 Money Mentorship</p>
+                <p>Contact: contact@moneymentorship.com</p>
+            </div>
+        </div>
+    </footer>
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <p>If you have any questions or need assistance, please don't hesitate to reach out to us:</p>
+        <div class="contact-info">
+            <p>Email: contact@moneymentorship.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main Street, City, Country</p>
+        </div>
+    </section>
+</body>
+</html>

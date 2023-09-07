@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Money Mentorship - Savings Result</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color:#14d6e97d;
+}
+
+h1 {
+   
+    margin:45px;
+    text-align: center;
+    color: #333;
+    align-content: baseline;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.result-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 24px;
+    color: #007bff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Center the result container on the page */
+
+    </style>
+</head>
+<body>
+    <h1>Your Monthly Savings:</h1>
+    <p>{{ savings }}</p>
+</body>
+</html>
